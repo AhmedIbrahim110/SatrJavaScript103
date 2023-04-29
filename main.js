@@ -13,15 +13,20 @@ const myString = 'I love JavaScript'
 let newRegex = myString.search(/JavaScript/)
 console.log(newRegex);
 
-*/
+
 console.log('Start');
-function userInfo(name, callback){
+
+const newUser = new Promise((resolve, reject)=>{
     setTimeout(()=>{
-        console.log('** User info receivde **');
-        callback(name)
+        const userInfo = {
+            name: 'Khalid'
+        }
+        resolve(userInfo)
     }, 3000)
-}
-let userName = userInfo('Khalid', name =>{
-    console.log(`Your name is ${name}`);
 })
+newUser.then(res =>{
+    console.log('** User info received **');
+})
+
 console.log('End');
+*/
