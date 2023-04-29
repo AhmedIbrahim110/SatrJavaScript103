@@ -29,4 +29,23 @@ newUser.then(res =>{
 })
 
 console.log('End');
+
+
+let colors = ['red', 'green']
+let [firstColor, secondColor, thirdColor = 'blue'] = colors
+console.log(firstColor,secondColor,thirdColor);
+
+
+let numbers = [1, 2, [3, 4]]
+let [first, second, third] = numbers
+console.log(first, second, third[0]);
+
+
+let student = {
+    name : 'Ali',
+    age : 25
+}
+let name = 'Saleh', age = 22
+({name, age} = student)
+console.log(name, age);
 */
